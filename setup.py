@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='binary_heap',
-    version='1.0.1',
+    version='1.0.3',
     description='Python functions for working with Binary Heap',
     keywords='binary-heap heap python-heap min-heap max-heap',
     long_description=open('README.rst').read(),
@@ -22,7 +22,6 @@ setup(
     classifiers=[
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',

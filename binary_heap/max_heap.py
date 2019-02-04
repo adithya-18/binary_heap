@@ -3,9 +3,7 @@ from binary_heap import BinaryHeap
 
 class MaxHeap(BinaryHeap):
     def __init__(self, heap=[]):
-        self.heap = heap
-        if self.heap:
-            self.heapify()
+        super(self.__class__, self).__init__(heap=heap)
 
     def _heapify(self, index, size):
         """
@@ -31,12 +29,6 @@ class MaxHeap(BinaryHeap):
                 self._swap(index, left_index)
                 if left_index < size // 2:
                     self._heapify(left_index, size)
-
-    def get_max(self):
-        """
-        Return max value from heap
-        """
-        return self.get_root_value()
 
     def delete_element_at_index(self, index):
         """
